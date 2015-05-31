@@ -50,6 +50,9 @@ body {
   	display: inline-block;
   	margin-left: 19px
 }
+.socials-item:first-child {
+	margin-left: 0;
+}
 .socials-link {
 	width: 47px;
   	height: 47px;
@@ -166,7 +169,7 @@ body {
 	color: white;
 }
 .contacts-text:hover {
-	border-bottom: 1px solid #ffffff;
+	text-decoration: underline;
 }
 .contacts-item {
 	background: url(../img/sprites-contacts.png) 20px center no-repeat;
