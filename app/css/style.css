@@ -24,6 +24,8 @@ body {
 	margin-top: -80px;	
 }
 /* прибьём футер к низу - конец*/
+
+/*clearfix*/
 .clearfix:before, 
 .clearfix:after {
 	content: " ";
@@ -32,6 +34,7 @@ body {
 .clearfix:after {
 	clear: both;
 }
+/*clearfix-end*/
 
 /*хэдер*/
 .header {
@@ -211,131 +214,6 @@ body {
 	background-position: 10px -89px;
 }
 /*контакты - конец*/
-
-/*основной контент*/
-/*основная информация*/
-.main-content {
-	width: 650px;
-	float: right;
-}
-.infosection {
-	background-color: #eff3f7;
-	border-radius: 4px;
-	padding-bottom: 25px;
-	margin-bottom: 27px;
-}
-.infosection-list {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-.infosection-item {
-	padding-left: 105px;
-	padding-top: 8px;
-	margin-bottom: 8px;
-}
-.infosection-item .place {
-	font-size: 17px;
-	color: #4a545d;
-}
-.infosection-item .time {
-	font-family: 'fira_sanslight';
-	font-size: 15px;
-	line-height: 1;;
-}
-.infosection-item.work {
-	background-image: url(../img/portf.png);
-	background-repeat: no-repeat;
-	background-position: 39px center;
-}
-.infosection-item.university {
-	background-image: url(../img/hat.png);
-	background-repeat: no-repeat;
-	background-position: 39px center;
-}
-.infosection-item.course {
-	background-image: url(../img/sheet.png);
-	background-repeat: no-repeat;
-	background-position: 45px center;
-}
-.infosection-title {
-	font-size: 27px;
-	display: inline-block;
-	color: #3ba8c0;
-	border-bottom: 2px solid #3ba8c0;
-	margin: 4px;
-	padding: 10px 21px;
-}
-.infosection-body {
-	padding: 10px 20px;
-}
-.foto-box {
-	float: left;
-	width: 140px;
-	height: 140px;
-	border-radius: 50% 50%;
-	overflow: hidden;
-	border: 5px solid #30a5bc;
-	margin-left: 35px;
-	margin-top: 22px;
-}
-.foto-img {
-	width: 100%;
-}
-.basicfacts {
-	float: right;
-	width: 370px;
-}
-.basicfacts-list {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	margin-top: 4px;
-	margin-left: -30px;
-}
-.basicfact-item {
-	margin-bottom: 6px;
-}
-.basicfact-title {
-	float: left;
-	font-family: 'fira_sansmedium';
-	font-size: 17px;
-	color: #4a545d;
-}
-.basicfact-content {
-	float: left;
-	font-size: 15px;
-	color: #5a636b;
-	padding-top: 2px;
-	width: 210px;
-	margin-left: 20px;
-}
-
-/*скиллы*/
-.basicfact-content.skills {
-	padding-top: 7px;
-	width: 200px;
-}
-.skills-list {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-.skill-item {
-	font-family: 'proxima_nova_condensedSBd';
-	font-size: 14px;
-	background-image: -moz-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
-	background-image: -webkit-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
-	background-image: -ms-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
-  	color: #ffffff;
-	display: inline-block;
-	padding: 2px 15px;
-	margin-right: 2px;
-	border-radius: 2px;
-	margin-bottom: 5px;
-}
-/*скиллы - конец*/
-/*основная информация - конец*/
 
 /*футер*/
 .footer{	
