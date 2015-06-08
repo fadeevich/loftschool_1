@@ -116,13 +116,45 @@
 				</main>
 			</div>
 	</div>
-	<footer class="footer">
-    <div class="container">
-    	<div class="lock">
-      	<a href="#" class="lock-inner">Войти</a>
-      </div>
+   		<footer class="footer">
+    		<div class="container">
+     		<div class="lock">
+     			<a href="#" class="lock-inner">Войти</a>
+     		</div>
       <div class="copyright">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
     </div>
 	</footer>
+<!--	POPUP-->
+	<div class="modal-window">
+		<div class="modal-window-header clearfix">
+			<h2 class="modal-window-title">Добавление проекта</h2>
+			<a href="#" class="modal-window-btn-close">Закрыть</a>
+		</div>
+		<form action="#" class="modal-window-form">
+			<div class="form-row">
+				<label for="project-title" class="modal-window-label">Название проекта</label>
+				<input type="text" class="modal-window-input" id="project-title" placeholder="Введите название">
+			</div>
+			<div class="form-row">
+				<label for="project-image" class="modal-window-label">Картинка проекта</label>
+					<div class="file-upload-row">
+						<div class="modal-window-input file">Загрузите изображение</div>
+						<div class="file-upload-btn">Загрузить<input type="file" id="project-image">
+						</div>
+					</div>
+			</div>
+			<div class="form-row">
+				<label for="project-url" class="modal-window-label">URL проекта</label>
+				<input type="text" class="modal-window-input" id="project-url" placeholder="Добавьте ссылку">
+			</div>
+			<div class="form-row">
+				<label for="project-descr" class="modal-window-label">Описание</label>
+				<textarea type="text" class="modal-window-textarea" id="project-descr" placeholder="Пара слов о Вашем проекте"></textarea>
+			</div>
+			<div class="btn-row">
+				<input type="submit" class="modal-window-btn-submit" value="Добавить">
+			</div>
+		</form>
+	</div>
 </body>
 </html>
