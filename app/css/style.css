@@ -250,3 +250,19 @@ body {
 }
 /*Логин - конец*/
 /*футер - конец*/
+input::-webkit-input-placeholder {color:#48cbe8;font-family: 'fira_sanslight';font-size: 13px;text-indent: 9px;}
+input::-moz-placeholder {color:#48cbe8;font-family: 'fira_sanslight';font-size: 13px;text-indent: 9px;}
+input:-moz-placeholder {color:#48cbe8;font-family: 'fira_sanslight';font-size: 13px;text-indent: 9px;}
+input:-ms-input-placeholder {color:#48cbe8;font-family: 'fira_sanslight';font-size: 13px;text-indent: 9px;}
+textarea::-webkit-input-placeholder {color: #48cbe8;font-family: 'fira_sanslight';font-size: 13px;text-indent: 9px;}
+textarea::-moz-placeholder {color: #48cbe8;font-family: 'fira_sanslight';font-size: 13px;text-indent: 9px;}
+textarea:-moz-placeholder {color:#48cbe8;font-family: 'fira_sanslight';font-size: 13px;text-indent: 9px;}
+textarea:-ms-input-placeholder {color:#48cbe8;font-family: 'fira_sanslight';font-size: 13px;text-indent: 9px;}
+input:focus::-webkit-input-placeholder {color: transparent;}
+input:focus::-moz-placeholder {color: transparent;}
+input::focus-moz-placeholder {color: transparent;}
+input:focus:-ms-input-placeholder {color: transparent;}
+textarea:focus::-webkit-input-placeholder {color: transparent;}
+textarea:focus::-moz-placeholder {color: transparent;}
+textarea:focus:-moz-placeholder {color: transparent;}
+textarea:focus:-ms-input-placeholder {color: transparent;}

@@ -121,5 +121,7 @@
 	border-radius: 2px;
 	margin-bottom: 5px;
 }
+/*IE8*/
+.lt-ie9 .skill-item {background-color: #30a5bc;}
 /*скиллы - конец*/
 /*основная информация - конец*/

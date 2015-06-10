@@ -1,0 +1,115 @@
+.main-content {
+	width: 650px;
+	float: right;
+}
+.contact-me {
+	background-color: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 38px;
+	min-height: 840px;
+	overflow: hidden;
+}
+.contact-me-title {
+	height: 120px;
+	margin: 0;
+	margin-bottom: 50px;
+	background-color: #48cbe8;
+	color: #fff;
+	font-size: 27px;
+	line-height: 120px;
+	text-align: center;
+	border-bottom: 17px solid #67dffa;
+}
+.contact-me-form {
+	width: 400px;
+	margin: 0 auto;
+}
+.contact-me-form-row{
+	margin-bottom: 15px;
+}
+.contact-me-label {
+	display: block;
+	font-family: 'fira_sanslight';
+	color: #959aa8;
+	font-size: 19px;
+	line-height: 1;
+}
+.contact-me-input {
+	width: 100%;
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+	outline: none;
+	background-color: #fbfcfd;
+	font-family: 'fira_sanslight';
+	font-size: 13px;
+	color:#48cbe8;
+	text-indent: 9px;
+	height: 39px;
+	line-height: 39px;
+}
+.contact-me-textarea {
+	width: 396px;
+	height: 180px;
+	resize: none;
+	outline: none;
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+	background-color: #fbfcfd;
+	font-family: 'fira_sanslight';
+	font-size: 13px;
+	color:#48cbe8;
+	text-indent: 9px;
+}
+.contact-me-sender {
+	width: 190px;
+}
+.contact-me-sender.name {
+	float: left;
+}
+.contact-me-sender.email {
+	float: right;
+}
+.recaptcha {
+	float: left;
+	width: 190px;
+	height: 77px;
+	background: #fff url(../img/recaptcha.png) no-repeat center;
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+}
+#recaptcha-code {
+	float: right;
+	width: 190px;
+	margin-top: 22px;
+	height: 28px;
+	line-height: 28px;
+}
+.contact-me-btn {
+	padding: 0 20px 0 20px;
+	font-size: 19px;
+	color: #f6f6f6;
+	border: none;
+	outline: none;
+	border-radius: 8px;
+	height: 32px;
+	
+}
+.contact-me-btn.submit {
+	float: left;
+	background-color: #48cbe8;
+	border-bottom: 3px solid #3ba8c0;
+}
+.contact-me-btn.reset {
+	float: right;
+	background-color: #849db5;
+	border-bottom: 3px solid #687b8f;
+}
+.contact-me-btn:hover {
+	border-bottom: none;
+}
+.contact-me-btn.submit:active {
+	border-top: 3px solid #3ba8c0;
+}
+.contact-me-btn.reset:active {
+	border-top: 3px solid #687b8f;
+}

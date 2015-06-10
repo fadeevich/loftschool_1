@@ -180,14 +180,7 @@
 	margin: 0 auto;
 	width: 320px;;
 }
-input::-webkit-input-placeholder {color:#48cbe8;font-family: 'fira_sanslight';font-size: 13px;text-indent: 9px;}
-input::-moz-placeholder {color:#48cbe8;font-family: 'fira_sanslight';font-size: 13px;text-indent: 9px;}
-input:-moz-placeholder {color:#48cbe8;font-family: 'fira_sanslight';font-size: 13px;text-indent: 9px;}
-input:-ms-input-placeholder {color:#48cbe8;font-family: 'fira_sanslight';font-size: 13px;text-indent: 9px;}
-textarea::-webkit-input-placeholder {color: #48cbe8;font-family: 'fira_sanslight';font-size: 13px;text-indent: 9px;}
-textarea::-moz-placeholder {color: #48cbe8;font-family: 'fira_sanslight';font-size: 13px;text-indent: 9px;}
-textarea:-moz-placeholder {color:#48cbe8;font-family: 'fira_sanslight';font-size: 13px;text-indent: 9px;}
-textarea:-ms-input-placeholder {color:#48cbe8;font-family: 'fira_sanslight';font-size: 13px;text-indent: 9px;}
+
 .modal-window-label {
 	font-size: 17px;
 	color: #959aa8;
@@ -218,21 +211,28 @@ textarea:-ms-input-placeholder {color:#48cbe8;font-family: 'fira_sanslight';font
   background: #48cbe8 url(../img/btn-file-upload.png) no-repeat 10px 8px;
 }
 .file-upload-btn #project-image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 200px;
-  opacity: 0;
   cursor: pointer;
+  display: block;
+  font-size: 999px;
+  filter: progid:DXImageTransform.Microsoft.Alpha (opacity=0);
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
 }
 .modal-window-input.file {
+	height: 37px;
 	float: left;
 	width: 266px;
 	border-radius: 4px 0 0 4px;
 }
 .modal-window-textarea {
-	width: 99%;
+	width: 317px;
 	height: 109px;
+	resize: none;
 	outline: none;
 	border: 1px solid #48cbe8;
 	border-radius: 4px;
@@ -261,4 +261,24 @@ textarea:-ms-input-placeholder {color:#48cbe8;font-family: 'fira_sanslight';font
 }
 .modal-window-btn-submit:active {
 	border-top: 3px solid #3ba8c0;
+}
+/*IE8*/
+html.lt-ie9 #modal-window-input-file {
+	width: 263px;
+}
+html.lt-ie9 #project-image {
+	font-size: 0;
+}
+html.lt-ie9 .myworks-item.add:hover {
+	background-position: center 45px;
+	font-weight: normal;
+}
+html.lt-ie9 .myworks-item.add:active {
+	background-color: none;
+}
+html.lt-ie9 .myworks-item.add-title {
+	left: 20px;
+}
+html.lt-ie9 .main-content {
+	width: 700px !important;
 }
