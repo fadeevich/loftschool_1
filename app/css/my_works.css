@@ -136,12 +136,38 @@
 	top: 0px;
 	left: 0px;
 	background-color: #58697a;
-	opacity: 0.75;
 	width: 100%;
 	height: 100%;
+	opacity: 0.75;
+	animation: fadein 0.3s;
+}
+@keyframes modal-window-in {
+	0% {
+		transform: translateY(-2000px);
+	}
+	70% {
+		transform: translateY(30px);
+	}
+	90% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.35;
+	}
+	100% {
+		opacity: 0.75;
+	}
 }
 .modal-window {
-	display: block;
+	display: none;
 	position: fixed;
 	overflow: hidden;
 	z-index: 20;
@@ -152,6 +178,10 @@
 	border-radius: 4px/7px;
 	background-color: #eff3f7;
 	box-shadow: 0 6px 12px 1px rgba(13,16,7,.35);
+}
+.modal-window-show {
+	display: block;
+	animation: modal-window-in 0.6s;
 }
 .modal-window-header {
 	background-color: #48cbe8;
@@ -244,6 +274,7 @@
 }
 .btn-row {
 	text-align: center;
+	margin-bottom: 20px;
 }
 .modal-window-btn-submit {
 	padding: 0 30px 0 30px;
