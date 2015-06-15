@@ -1,16 +1,20 @@
-var addProjectLink = document.querySelector(".add");
-var addProjectPopup = document.querySelector(".modal-window");
-var addProjectClose = document.querySelector(".modal-window-btn-close");
-var bodyDark = document.getElementById("body");
+$(document).ready(function() {
+	$('#project-add').click(function (event) {
+		event.preventDefault();
+		$('#overlay').fadeIn(200, 
+			function () {
+				$('#modal-window').css('display', 'block')
+													.animate({opacity: 1, top: '10%'}, 400);
+			});
+	});
 
-addProjectLink.addEventListener("click", function(e) {
-	e.preventDefault();
-	addProjectPopup.classList.add("modal-window-show");
-	bodyDark.setAttribute("class", "body-darken");
-});
-
-addProjectClose.addEventListener("click", function(e) {
-	e.preventDefault();
-	addProjectPopup.classList.remove("modal-window-show");
-	bodyDark.classList.remove("body-darken")
+	$('#modal-window-btn-close, #overlay').click(function(event) {
+		event.preventDefault();
+		$('#modal-window').animate({opacity: 0, top: '-500px'}, 400,
+			function() {
+				$(this).css('display', 'none');
+				$('#overlay').fadeOut(200);
+			}
+		);
+	});
 });
