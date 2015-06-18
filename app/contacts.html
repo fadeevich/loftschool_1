@@ -11,10 +11,13 @@
 	<link rel="stylesheet" href="font/fira/fira.css">
 	<link rel="stylesheet" href="font/proximanova/proximanovacond-semibold.css">
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/contact.css">
 	<script src="bower/jquery/dist/jquery.min.js"></script>
 	<script src="bower/modernizr/modernizr.js"></script>
+	<script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+	<script src="bower/qtip2/jquery.qtip.min.js"></script>
 </head>
 <body>
 	<!--[if lt IE 7]>
@@ -74,25 +77,25 @@
 							<div class="contact-me-form-row clearfix">
 								<div class="contact-me-sender name">
 									<label for="sender-name" class="contact-me-label">Имя</label>
-									<input type="text" class="contact-me-input" id="sender-name" placeholder="Как к вам обращаться">
+									<input type="text" class="contact-me-input" id="sender-name" placeholder="Как к вам обращаться" tooltip-content="Вы не ввели имя">
 								</div>
 								<div class="contact-me-sender email">
 									<label for="sender-email" class="contact-me-label">Email</label>
-									<input type="text" class="contact-me-input" id="sender-email" placeholder="Куда мне писать">
+									<input type="text" class="contact-me-input" id="sender-email" placeholder="Куда мне писать" tooltip-position="right" tooltip-content="Вы не ввели e-mail">
 								</div>
 							</div>
 							<div class="contact-me-form-row">
 								<label for="sender-message" class="contact-me-label">Сообщение</label>
-								<textarea name="sender-message" class="contact-me-textarea" id="sender-message" placeholder="Кратко в чем суть"></textarea>
+								<textarea name="sender-message" class="contact-me-textarea" id="sender-message" placeholder="Кратко в чем суть" tooltip-content="Что вы от меня хотите?"></textarea>
 							</div>
 							<div class="contact-me-form-row clearfix">
 								<label for="recaptcha-code" class="contact-me-label">Введите код, указанный на картинке</label>
 								<div class="recaptcha"></div>
-								<input type="text" class="contact-me-input" id="recaptcha-code" placeholder="Введите код">
+								<input type="text" class="contact-me-input" id="recaptcha-code" placeholder="Введите код" tooltip-position="right" tooltip-content="Вы не ввели код">
 							</div>
 							<div class="contact-me-btn-row clearfix">
-								<input type="submit" class="contact-me-btn submit" value="Отправить">
-								<input type="reset" class="contact-me-btn reset" value="Очистить">
+								<input type="submit" class="contact-me-btn submit" id="btn-submit" value="Отправить">
+								<input type="reset" class="contact-me-btn reset" id="btn-reset" value="Очистить">
 							</div>
 						</form>
 					</div>
@@ -107,5 +110,6 @@
       <div class="copyright">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
     </div>
 	</footer>
+	<script src="js/main.js"></script>
 </body>
 </html>

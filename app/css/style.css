@@ -266,3 +266,10 @@ textarea:focus::-webkit-input-placeholder {color: transparent;}
 textarea:focus::-moz-placeholder {color: transparent;}
 textarea:focus:-moz-placeholder {color: transparent;}
 textarea:focus:-ms-input-placeholder {color: transparent;}
+.tooltip {
+	font-size: 13px;
+	color: #fff;
+	background-color: #f97e76;
+	border: none;
+	border-radius: 2px;
+}

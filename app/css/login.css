@@ -70,3 +70,7 @@
 .login-form-btn:active {
 	border-top: 3px solid #3ba8c0;
 }
+.has-error {
+	background-color: rgba(249,126,118,.3);
+	border: 1px solid #f97e76;
+}

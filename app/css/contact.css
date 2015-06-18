@@ -112,3 +112,7 @@
 .contact-me-btn.reset:active {
 	border-top: 3px solid #687b8f;
 }
+.has-error {
+	background-color: rgba(249,126,118,.3);
+	border: 1px solid #f97e76;
+}
