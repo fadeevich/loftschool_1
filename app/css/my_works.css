@@ -276,6 +276,9 @@ html.lt-ie9 .myworks-item.add:active {
 html.lt-ie9 .myworks-item.add-title {
 	left: 20px;
 }
+.no-opacity .hover-title {
+	display: none;
+}
 html.lt-ie9 .main-content {
 	width: 700px !important;
 }

@@ -1,14 +1,33 @@
 $(function() {
 	Popup.init();
 	validation.init();
+	imageFileName.init();
 });
 
-	$('input, textarea').placeholder();
+$('input, textarea').placeholder();
+	
+var imageFileName = (function ($) {
 
-	var Popup = (function($) {
+	function setUpListeners () {
+	$('#project-image').on('change', function(e){
+		e.preventDefault;
+		var file = $(this),
+				fileName = file.val(),
+				inputText = file.parentsUntil('.form-row').find('#modal-window-input-file');
+		inputText.val(fileName);
+	});
+}
+	return {
+			init: function(){
+				setUpListeners();
+			}
+		}
+	}(jQuery));
+
+var Popup = (function($) {
 
     	function setUpListeners(){
-    		$('#project-add').on('click', function(e) {
+    		$('#project-add').on('click', function(e){
       	e.preventDefault();
       	$('#modal-window').bPopup({
       		modalClose: false,
