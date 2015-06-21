@@ -15,6 +15,7 @@ var imageFileName = (function ($) {
 				fileName = file.val(),
 				inputText = file.parentsUntil('.form-row').find('#modal-window-input-file');
 		inputText.val(fileName);
+	inputText.trigger('hideToolTips');
 	});
 }
 	return {
