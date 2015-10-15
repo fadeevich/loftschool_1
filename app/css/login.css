@@ -1,13 +1,17 @@
 .login {
-	position: fixed;
-	top: 25%;
-	left: 29%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
 	width: 590px;
-	min-height: 484px;
+	height: 484px;
 	border-radius: 4px;
 	background-color: #eff3f7;
 	box-shadow: 0 4px 7px rgba(13,16,7,.29);
 	overflow: hidden;
+	z-index: 100;
 }
 .login-title {
 	height: 92px;
